@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
-ENTRYPOINT ["python"]
-CMD ["warehouse.py"]
+#ENTRYPOINT ["python"]
+#CMD ["warehouse.py"]
