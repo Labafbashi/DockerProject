@@ -3,16 +3,16 @@ from datetime import datetime
 import sys
 
 #database connection
-try:
-	connection = mysql.connector.connect(
-		host = "db",
-		user = "root",
-		password = "root",
-		database = "warehouse",
-		auth_plugin='mysql_native_password')
-	print("DB  Connected.")
-except:
-	print("Unable to connect to the database.")
+#try:
+connection = mysql.connector.connect(
+	host = "db",
+	user = "root",
+	password = "root",
+	database = "warehouse",
+	auth_plugin='mysql_native_password')
+#	print("DB  Connected.")
+#except:
+#	print("Unable to connect to the database.")
 
 cursor = connection.cursor()
 datenow = datetime.now()
